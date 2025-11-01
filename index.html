@@ -1,18 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<body>
-<section>
-    <div class="bg-cover bg-center justify- h-screen w-3/4 ml-40  " style="background-image: url(/assets/img/Untitled\ design.png);">
-       <h1>Expense Tracker..</h1> 
 
-    </div>
-</section>
+
+<body>
+
+    <section>
+        <div
+            class="bg-white  pb-10 border-1 border-solid border-black-200 shadow-2xl rounded-3xl w-250 ml-40 h-180 mt-8 ">
+
+
+
+            <!-- heading -->
+            <div class="bg-grey-200 mt-2">
+                <h1 class="text-5xl mt-6  text-yellow-600 font-medium text-center">Expense Tracker 1.0</h1>
+
+                <div class=" mt-10">
+                    <div class="flex flex-col md:flex-row gap-0 justify-center">
+
+
+
+                        <!-- expenses -->
+                        <div
+                            class=" bg-black text-center bg-opacity-40  rounded-2xl text-white w-100 max-w-5xl backdrop-blur-lg shadow-lg ">
+                            <div class="mt-10">
+                                <p class="text-yellow-600 text-2xl "> <b>Added Expenses</b></p>
+
+                                <p class="text-yellow-200 mt-5 text-1xl "> Expense Name: <b>Groceries</b></p>
+                                <p class="text-yellow-200 text-1xl "> Expense Amount: <b>10000 /- </b> </p>
+
+                                <p class="text-yellow-200 mt-5 text-1xl "> Expense Name: <b>Jewelry</b>
+                                <p class="text-yellow-200 text-1xl "> Expense Amount: <b>5000 /- </b> </p>
+
+                                <p class="text-yellow-200 mt-5 text-1xl "> Expense Name: <b>Clothes</b>
+                                <p class="text-yellow-200 text-1xl ">Expense Amount: <b>7000 /-</b> </p>
+                            </div>
+                            <table class=" mt-5 ml-5 border-1 border-white">
+                                <tr class="gap-10   ">
+                                    <th class="py-3 px-3">Date</th>
+                                    <th class="py-3 px-6">category</th>
+                                    <th class="py-3 px-3">income</th>
+                                    <th class="py-3 px-3">expenses</th>
+                                </tr>
+
+                                <tr>
+                                    <td>01/05/2017</td>
+                                    <td>Bill</td>
+                                    <td>utilities</td>
+                                    <td>$ 400.0</td>
+                                </tr>
+
+                                <tr>
+                                    <td>03/05/2017</td>
+                                    <td>Misc</td>
+                                    <td>Dinner</td>
+                                    <td>$ 80.00</td>
+                                </tr>
+                                </tr>
+
+                                <tr>
+                                    <td class="p-1">20/05/2017</td>
+                                    <td>Bills</td>
+                                    <td>Rent</td>
+                                    <td>$ 800.0</td>
+                                </tr>
+
+                                </tr>
+
+                                <tr>
+                                    <td>27/05/2017</td>
+                                    <td>Misc</td>
+                                    <td>Movies</td>
+                                    <td>$ 80.00</td>
+                                </tr>
+                            </table>
+
+                            </p>
+                        </div>
+
+
+                        <!-- total-budget -->
+                        <div
+                            class=" bg-black bg-opacity-40 p-10 rounded-2xl text-white w-100 max-w-5xl backdrop-blur-sm shadow-lg ">
+                            <p class="text-yellow-600 text-2xl "> <b>Total Budget: 1,60,000/-</b></p>
+                            <p class="text-yellow-600 text-2xl mt-4"> <b>Current Balance: 80,000/-</b></p>
+
+                            <p class="text-yellow-600 text-2xl mt-10"> <b>Add Money To Budget:</b></p>
+
+                            <div class="w-65 mt-3 p-2 rounded-sm bg-white text-black">60000 <button
+                                    class="ml-28 hover:first:text-yellow-700 text-black">Add Money</button> </div>
+
+                            <p class="text-yellow-600 text-2xl mt-10"> <b>Add Expenses:</b></p>
+                            <form>
+                                <label>Description :-
+                                    <input type="text" class="bg-black border-2 border-solid p-1 rounded"
+                                        placeholder="Rent">
+                                </label>
+
+                                <label>Amount :-
+                                    <input type="text" class="bg-black border-2 border-solid p-1 pl-7 mt-2 rounded"
+                                        placeholder="7000">
+
+                                </label>
+                                <label>Date :-
+                                    <input type="date" class="bg-black border-2 border-solid p-1 mt-2 rounded">
+                                </label>
+                                <button
+                                    class="border-1 border-white p-1 mt-4 ml-30 rounded hover:bg-white text-yellow-500">Add
+                                    transaction</button>
+
+                            </form>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
